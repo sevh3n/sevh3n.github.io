@@ -1,13 +1,26 @@
 ---
-layout: default
+layout: page
+title: inicio
 ---
 
+<h1 style="color: #b5e853; font-size: 24px ; font-weight: bold;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+  Welcome to sevh3n's blog
+</h1> 
+
+<blockquote><em>"The quieter you become, the more you are able to hear."</em></blockquote>
+
+<p>Hola, bienvenido a mi blog, un espacio donde comparto mis conocimientos, investigaciones y aprendizajes en el mundo del <strong>hacking ético</strong>, la <strong>seguridad informática.</strong></p>
+
+<p>Si te apasiona la ciberseguridad o simplemente quieres aprender más sobre este fascinante mundo, estás en el lugar correcto. ¡Explora, aprende y comparte!</p>
+
+<h1 style="color: #b5e853; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+    Contact
+</h1>
+
 <ul>
-    {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
-    {% endfor %}
+  <li>&#x1F517; <a href="https://www.linkedin.com/in/alvaro-rod/">Linkedin</a></li>
+  <li>🌐 <a href="https://sevh3n.github.io">Mi blog</a></li>
+  <li>🐙 <a href="https://github.com/sevh3n">GitHub</a></li>
 </ul>
+
+<p style="text-align: right;">⚡ <em>"H4ck th3 pl4n3t"</em></p>

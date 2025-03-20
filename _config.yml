@@ -1,8 +1,8 @@
 title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+description: "A Blog For Hackers"
 author:
   name: "sevh3n"
-  email: "sevh3n@somewebsite.somedomain"
+  email: "aj.rcelada@gmail.com"
   url: "https://ashishchaudhary.in/hacker-blog"
 
 baseurl: /
@@ -10,8 +10,6 @@ baseurl: /
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 3
-paginate_path: /page/:num/
 
 defaults:
   -
@@ -26,7 +24,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: true
+  layouts:
+    category: category
+  permalinks:
+    category: /category/:name/
 
 # Custom variables
-owner : "SomeHacker"
+owner : "sevh3n"
 year : "2025"

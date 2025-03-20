@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1 style="color: #b5e853; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">
+    ~/categories/{{ page.title }}:
+  </h1> 
+
+<ul>
+  {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" style="text-decoration: none">
+        <span style="font-size: 18px;">
+        {{ post.title }}
+        </span>
+      </a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+    </li>
+  {% endfor %}
+</ul>
