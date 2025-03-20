@@ -1,3 +1,3 @@
 # The Hacker-Blog
 
-Blog de hacking
+Blog personal de networking, ciberseguridad y pentesting.
