@@ -24,14 +24,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-archives
 
-jekyll-archives:
-  enabled: true
-  layouts:
-    category: category
-  permalinks:
-    category: /category/:name/
 
 # Custom variables
 owner : "sevh3n"

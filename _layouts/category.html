@@ -7,14 +7,14 @@ layout: default
   </h1> 
 
 <ul>
-  {% for post in page.posts %}
+  {% for post in site.categories[page.category] %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" style="text-decoration: none">
-        <span style="font-size: 18px;">
-        {{ post.title }}
-        </span>
+      <a href="{{ post.url | relative_url }}" style="text-decoration: none;">
+        <span style="font-size: 18px;">{{ post.title }}</span>
       </a>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
     </li>
   {% endfor %}
 </ul>
