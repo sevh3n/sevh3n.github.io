@@ -2,5 +2,3 @@ networking:
   description: "En esta sección se discuten temas sobre protocolos, comunicaciones, análisis de tráfico, etc"
 pentesting:
   description: "Guías y tutoriales sobre pruebas de penetración y seguridad ofensiva."
-ciberseguridad:
-  description: "Información sobre protección de sistemas y datos."
